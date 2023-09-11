@@ -7,8 +7,8 @@
   text-align: center;
   background-color: #282c34;
   color: #fff;
-  width: 100wh;
-  height: 100vh;
+  min-width: 100wh;
+  min-height: 100vh;
 }
 
 .App-logo {

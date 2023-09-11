@@ -11,15 +11,17 @@ const Accounts = () => {
 
     return (
         <>
-            <div style={{ padding: "1rem" }}>
+            <div style={{ padding: "10px" }}>
                 <h1>Account component</h1>
                 <h1>Amount : ${amount}</h1>
                 <h1>Points: ${points}</h1>
             </div>
 
-            <div style={{ display: "flex", gap: "2rem", padding: "2rem", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ display: "flex", gap: "10px", padding: "10px", alignItems: "center", justifyContent: "center" }}>
                 <button style={{ padding: "12px 6px", background: "yellow", textDecoration: "none", border: "none", borderRadius: "6px" }} onClick={() => dispatch(increment())} >Increment +</button>
                 <button style={{ padding: "12px 6px", background: "yellow", textDecoration: "none", border: "none", borderRadius: "6px" }} onClick={() => dispatch(decrement())}>Decrement -</button>
+            </div>
+            <div style={{ display: "flex", gap: "10px", padding: "10px", alignItems: "center", justifyContent: "center" }}>
                 <input placeholder='Enter Number' style={{ padding: "10px 5px ", textDecoration: "none", border: "none", borderRadius: "6px" }} onChange={(e) => setValue(+e.target.value)} />
                 <button style={{ padding: "12px 6px", background: "yellow", textDecoration: "none", border: "none", borderRadius: "6px" }} onClick={() => dispatch(incrementByAmount(value))}>Increement by {value}+</button>
             </div>
