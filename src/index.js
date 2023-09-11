@@ -6,13 +6,11 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import accountRedcer from './Slices/accountSlice'
 import bonousReducer from './Slices/bonousSlice'
-import rewardReducer from './Redeucer/reward';
 
 const store = configureStore({
   reducer: {
     accountRedcer,
     bonousReducer,
-    rewardReducer
   }
 })
 
