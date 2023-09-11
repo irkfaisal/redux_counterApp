@@ -20,7 +20,7 @@ const Accounts = () => {
             <div style={{ display: "flex", gap: "2rem", padding: "2rem", alignItems: "center", justifyContent: "center" }}>
                 <button style={{ padding: "12px 6px", background: "yellow", textDecoration: "none", border: "none", borderRadius: "6px" }} onClick={() => dispatch(increment())} >Increment +</button>
                 <button style={{ padding: "12px 6px", background: "yellow", textDecoration: "none", border: "none", borderRadius: "6px" }} onClick={() => dispatch(decrement())}>Decrement -</button>
-                <input placeholder='Enter number' style={{ padding: "10px 5px ", textDecoration: "none", border: "none", borderRadius: "6px" }} onChange={(e) => setValue(+e.target.value)} />
+                <input placeholder='Enter Number' style={{ padding: "10px 5px ", textDecoration: "none", border: "none", borderRadius: "6px" }} onChange={(e) => setValue(+e.target.value)} />
                 <button style={{ padding: "12px 6px", background: "yellow", textDecoration: "none", border: "none", borderRadius: "6px" }} onClick={() => dispatch(incrementByAmount(value))}>Increement by {value}+</button>
             </div>
         </>
